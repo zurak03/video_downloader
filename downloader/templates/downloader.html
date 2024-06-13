@@ -1,0 +1,34 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'downloader/styles.css' %}">
+
+
+<div style="display: flex; flex-direction: column; align-items: center;">
+    <span id="site-title">
+        <span style="color: red;">
+            Youtube
+        </span>
+        video downloader
+    </span>
+    <div id="video-holder">
+        <div id="video-info" style="display: flex;">
+            <img src="{{ url.thumbnail_url }}" alt="Video thumbnail" style="width: 450px;">
+            <div id="tlt-desc-holder">            
+                <span id="video-title">Title: {{ url.title }}</span>
+                <span id="video-desc">Description: {{ url.description }}</span>
+            </div>
+        </div>
+
+        <form action="{% url "YtDown:downloadvideo" %}" method="POST" id="video-download-type-holder">
+            {% csrf_token %}
+            <input name="video_url" id="video_url" style="display: none;" value="{{ url.url }}">
+            <select name="mp4-download" id="mp4-download">
+                {% for i in url.type %}
+                    <option value="{{i}}">{{ i }}</option>
+                {% endfor %}
+            </select>
+            <button>
+                Download
+            </button>
+        </form>
+    </div>
+</div>

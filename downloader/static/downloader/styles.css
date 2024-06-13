@@ -1,0 +1,67 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    /* padding: 16px; */
+
+}
+
+#holder{
+    width: 800px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#site-title
+{
+    font-size: 64px;
+}
+
+#item-holder{
+    width: 100%;
+    font-size: 20px;
+    display: flex;
+}
+    
+#input-holder {
+    display: flex;
+    margin-top: 16px;
+}
+
+#input-holder input{
+    font-size: 16px;
+    padding: 0 0 0 8px;
+    width: 520px;
+    height: 32px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid;
+    outline: 0;            
+}
+
+#input-holder button{
+    color: black;
+    border: 1px solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 16px;
+    background-color: lightblue;
+    cursor: pointer;
+    
+}
+#video-info img{
+    width: 320px;
+}
+#tlt-desc-holder{
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    padding-left: 16px;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+        }
+
+        body{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+            justify-content: center;
+            /* padding: 16px; */
+
+        }
+
+        #holder{
+            width: 800px;
+            height: fit-content;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #holder span{
+            font-size: 64px;
+        }
+
+        #item-holder{
+            width: 100%;
+            font-size: 20px;
+            display: flex;
+        }
+            
+        #input-holder {
+            display: flex;
+            margin-top: 16px;
+        }
+
+        #input-holder input{
+            font-size: 16px;
+            padding: 0 0 0 8px;
+            width: 520px;
+            height: 32px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border: 1px solid;
+            outline: 0;            
+        }
+
+        #input-holder button{
+            border: 1px solid;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            font-size: 16px;
+            background-color: lightblue;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div id="video-holder">
+        <div id="video-info">
+            <img src="" alt="Video thumbnail">
+            <span id="video-title">title</span>
+        </div>
+        <div id="download-options">
+            <div id="choose-type">
+                <select name="type" id="type">
+                    <option value="mp4">mp4</option>
+                    <option value="mp3">mp3</option>
+                </select>
+            </div>
+            <div id="video-download-type-holder">
+                <select name="mp4-download" id="mp4-download">
+                    <option value="1">1</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
